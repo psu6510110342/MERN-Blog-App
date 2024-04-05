@@ -16,3 +16,9 @@ const app = express();
 app.listen(3000, () => {
     console.log('DONE');
 });
+
+app.get('/test', (req,res) => {
+    res.json({
+        message: 'API is Work'
+    });
+});
